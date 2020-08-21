@@ -1,0 +1,105 @@
+body {
+    background-color: #443737;
+    font-family: sans-serif;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.home-ctn {
+    width: 68%;
+    height: 37em;
+    background-color: #e7d9b4;
+    margin: 2em auto 0px auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    box-shadow: 0px 0px 20px black;
+}
+.home-ctn-left{
+    display: flex;
+    flex-direction: column;
+}
+.ctn-left_img{
+    width: 500px;
+    height: auto;
+    margin: 1em auto;
+    align-self: center;
+}
+
+.home-ctn_title {
+    padding: .5em;
+}
+
+.home-ctn_desc {
+    font-family: 'Russo One';
+    color: #443737;
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.home-ctn-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8b500;
+    padding: 1em;
+}
+.right_title{
+    font-family: sans-serif;
+    color:#443737;
+    font-size: 2.3em;
+    margin: 1em 0px 0px 0em;
+}
+.right_logo{
+    width: 100px;
+}
+
+.ctn-right-form {
+    border-radius: 5px;
+    width: 100%;
+    height: 75%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 20px  #a1790b ;
+}
+
+.right-form_input {
+    position: relative;
+    border: 1px solid #8f97a3;
+    font-size: 1.1em;
+    padding: .5em;
+    border-radius: 2px;
+    margin: 2em auto 0px auto;
+}
+
+.right-form-btn {
+    margin-top: 2em;
+    border: none;
+    color: #f7f7f7;
+    background-color: #443737;
+    padding: .5em;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.right-btn_text{
+    font-size: 1.1em;
+    color: #f7f7f7;
+    margin: .5em auto ;
+}
+.right-btn_register {
+    font-size: 1.15em;
+    color: black;
+}
+
+
+.validation-error::after{
+    content: "Email or Password incorrect";
+    position: absolute;
+    top: 30%;
+    color: red;
+}

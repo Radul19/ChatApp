@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>ChatApp</title>
+</head>
+
+<body>
+    <div class="register-img-ctn">
+        <img class="register-logo" src="./img/Logo2.2.png" alt="" />
+    </div>
+    <form class="register-form" action="/register.html" method="POST" id="registerForm">
+        <p class="register-title ">Register</p>
+        <div class="input-username-div" id="username-div">
+            <input class="register-input " type="text" name="username" placeholder="Username" id="input-username" />
+        </div>
+        <div class="input-email-div" id="email-div">
+            <input class="register-input" type="email" name="email" placeholder="Email" id="input-email" />
+        </div>
+        <div class="input-pass-div" id="pass-div">
+            <input class="register-input" type="password" name="password" placeholder="Password" id="input-password" />
+        </div>
+        <div class="input-passConfirm-div" id="passConfirm-div">
+            <input class="register-input" type="password" name="confirmPassword" placeholder="Confirm Password"
+                id="input-confirmPassword" />
+        </div>
+
+
+
+
+        <button class="register-btn" type="submit" id='register-btn'>Create Account</button>
+    </form>
+    <div class="register-foot">
+        <p class="foot-text">Already have an account ?</p>
+        <a class="foot-link" href="index.html">SigIn!</a>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCgMgxQncn3pHGVOEpR6IjDsBgo7u7T_co",
+            authDomain: "chatapp-d1b02.firebaseapp.com",
+            databaseURL: "https://chatapp-d1b02.firebaseio.com",
+            projectId: "chatapp-d1b02",
+            storageBucket: "chatapp-d1b02.appspot.com",
+            messagingSenderId: "33954260093",
+            appId: "1:33954260093:web:551f7054dd6d669090fd14"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <!--CUSTOM SCRIPTS-->
+    <script src="./scripts/register.js"></script>
+</body>
+
+</html>

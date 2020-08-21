@@ -1,0 +1,179 @@
+body {
+    background-color: #443737;
+    overflow: hidden;
+}
+
+.register-img-ctn {
+    display: flex;
+    width: 100%;
+    margin-top: 1-5em;
+}
+
+.register-logo {
+    width: 100px;
+    margin: 1em auto;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #f8b500;
+    padding: 2em 1.5em;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px #201b1b;
+    margin: 0px auto;
+}
+
+.register-form div {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+
+.register-title {
+    font-family: 'Russo One';
+    text-align: center;
+    font-size: 2em;
+    color: #2f2519;
+}
+
+.register-input {
+    /* font-family: 'Russo One'; */
+    width: 100%;
+    background-color: #f0cf77;
+    color: #2f2519;
+    margin-top: .5em;
+    padding: .2rem;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    border-top: 1px solid #2f2519;
+}
+
+.register-input::placeholder {
+    /* font-family: 'Russo One'; */
+    color: #2f25198e;
+}
+
+.register-btn {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    border: none;
+    background-color: #2f2519;
+    color: #f8b500;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.register-foot {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-text {
+    font-size: 1.2em;
+    color: #f7f7f7;
+}
+
+.foot-link {
+    margin-top: .3em;
+    font-size: 1.3em;
+    color: #f8b500;
+}
+
+input-username-div {
+    position: relative;
+}
+/* WRONG SINGS /////////////////////////////////////////////////////*/
+/*Username*/
+.username-wrong-sing::after {
+    content: '!';
+    position: absolute;
+    font-size: 1em;
+    background-color: #201b1b;
+    color: #f8b500;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: 40%;
+    right: -10%;
+}
+.username-wrong-sing:hover::before {
+    position: absolute;
+    content: 'Username already taken';
+    padding: .7em;
+    right: -50%;
+    top:-90%;
+    width: 120px;
+    background-color: #2f2519;
+    border-radius: 5px;
+    text-align: center;
+    color: #f8b500;
+}
+.username-wrong-sing:hover::after {
+    background-color: red;
+}
+/*Email*/
+.email-wrong-sing::after {
+    content: '!';
+    position: absolute;
+    font-size: 1em;
+    background-color: #201b1b;
+    color: #f8b500;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: 40%;
+    right: -10%;
+}
+.email-wrong-sing:hover::before {
+    position: absolute;
+    content: 'Email already taken';
+    padding: .7em;
+    right: -50%;
+    top:-90%;
+    width: 120px;
+    background-color: #2f2519;
+    border-radius: 5px;
+    text-align: center;
+    color: #f8b500;
+}
+.email-wrong-sing:hover::after {
+    background-color: red;
+}
+/*Pass Confirm*/
+.passConfirm-wrong-sing::after {
+    content: '!';
+    position: absolute;
+    font-size: 1em;
+    background-color: #201b1b;
+    color: #f8b500;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: 40%;
+    right: -10%;
+}
+.passConfirm-wrong-sing:hover::before {
+    position: absolute;
+    content: 'Passwords do not match';
+    padding: .7em;
+    right: -50%;
+    top:-90%;
+    width: 120px;
+    background-color: #2f2519;
+    border-radius: 5px;
+    text-align: center;
+    color: #f8b500;
+}
+.passConfirm-wrong-sing:hover::after {
+    background-color: red;
+}
